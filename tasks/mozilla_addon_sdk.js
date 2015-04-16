@@ -136,7 +136,7 @@ function xpi(grunt, options) {
 
   // pass --strip-sdk by default
   if (options.strip_sdk !== false) {
-    cfx_args = "--strip-sdk " + cfx_args;
+    // cfx_args = "--strip-sdk " + cfx_args; // no longer necessary for recent SDKs
   } else {
   // on "strip_sdk == false" bundle sdk and force use of the bundled modules
     cfx_args = "--no-strip-xpi  --force-use-bundled-sdk " + cfx_args;
